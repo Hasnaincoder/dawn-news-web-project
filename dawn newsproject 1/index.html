@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Dawn is a Pakistani English-language newspaper that was launched in British India in 1941. It is the largest English newspaper in Pakistan, and also serves as the country's newspaper of record.">
+    <meta name="keywords" content="dawn news politics,dawn news articles on politics">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="soccerr.png" />
+    <title>SOCCERRIFIC</title>
+    <style>
+      body{
+        overflow-x: hidden;
+      }
+      * {
+        margin: 0px;
+        padding: 0px;
+        
+      }
+
+      header {
+        background-color: black;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 6.5px;   
+        text-decoration: none;     
+      }
+
+      .head {
+        color: rgba(255, 255, 255, 0.694);
+        list-style-type: none;
+        font-size: 9.5px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        height: 3.5px;
+        text-decoration: none;
+      }
+
+      .logo {
+        text-align: center;
+        font-size: 60px;
+      }
+      .tag {
+        text-align: center;
+        font-size: 11px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(85, 82, 82);
+      }
+      nav {
+        border-top: 3px solid black;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12); 
+        margin: 10px 140px 0px 140px;       
+        letter-spacing: 2px;          
+        display: flex;
+        justify-content: center;
+      }
+
+      li {
+        list-style-type: none;
+        margin-inline: 10px; 
+        margin-top: 8px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: 0.6s;
+      }
+
+      li:hover{
+        background-color: rgba(0, 0, 0, 0.057);
+        border-radius: 2px; 
+        /* border-bottom: 2px solid rgb(126, 122, 122);  remove this code*/ 
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 12px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.947);
+      }
+
+      a:hover{
+        border-bottom: 1px solid rgb(0, 0, 0);    
+      }
+
+      #red {
+        color: red;
+      }
+
+
+
+      /* ---------------------------- Navigation media query ------------------------------ */
+
+      @media only screen and (max-width:1900px) {  
+        nav{
+          margin: 10px 270px 0px 270px;   
+          letter-spacing: 2px;                    
+        } 
+        a{ 
+            font-size: 10px;
+        }
+      }
+ 
+      
+      @media only screen and (max-width:1700px) {  
+        nav{
+          margin: 10px 200px 0px 200px;  
+          letter-spacing: 2px;               
+        }
+        a{
+            font-size: 10px;
+        }
+      }
+ 
+
+      @media only screen and (max-width:1800px) {  
+        nav{
+          margin: 10px 200px 0px 200px;   
+          letter-spacing: 1px;                
+        }
+        a{
+            font-size: 10px;
+        }
+      }
+
+      @media only screen and (max-width:1400px) {  
+        nav{
+            margin: 10px 40px 0px 40px;        
+            letter-spacing: 1px;          
+        }
+        a{
+            font-size: 10px;
+        }
+      }
+
+
+      @media only screen and (max-width:1556px) {  
+        nav{
+            margin: 10px 20px 0px 20px; 
+        }
+        a{ 
+            font-size: 10px;  
+        }
+      }
+
+
+      
+
+      @media only screen and (max-width:1368px) {  
+        nav{
+          margin: 10px 20px 0px 20px; 
+          letter-spacing: 1px;  
+        }
+        a{
+            font-size: 10px;
+        }
+      }
+
+
+      @media only screen and (max-width:1311px) {  
+        nav{
+            margin: 10px 75px 0px 75px;         
+        }
+        a{
+            font-size: 10px;
+        }
+      }
+
+      @media only screen and (max-width:1221px) {  
+        nav{
+            margin: 10px 20px 0px 20px;        
+            letter-spacing: normal;              
+        }
+        a{
+            font-size: 10px;
+        } 
+
+        .container{
+          display: flex;
+          flex-wrap: wrap; 
+          justify-content: center;
+          
+        }
+
+        .box-3{
+          margin-top: 500px; 
+        }
+
+        .box-2{
+          margin-top: 850px;  
+        }
+      }
+
+      @media only screen and (max-width:1020px) {   
+        nav{
+            margin: 10px 5px 0px 5px;                
+        }
+        a{
+            font-size: 8px;    
+        }
+        .head{
+            font-size: 8px; 
+        }
+
+       
+      }
+
+      @media only screen and (max-width:857px) {   
+        nav{
+          display: flex;
+          flex-wrap: wrap;
+            margin-top: 10px;          
+            margin-left: 180px;
+            margin-right: 180px;  
+        }
+        a{
+            font-size: 5px;     
+        } 
+        .head{
+            font-size: 5px;  
+        }
+
+        .box-3{
+          margin-top: 700px;   
+        }
+
+        .box-2{
+          margin-top: 1200px;       
+        }
+
+       
+       
+
+      }
+
+      @media only screen and (max-width:660px) {   
+        nav{ 
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;          
+            margin-left: 30px;
+            margin-right: 30px;    
+        }
+        a{
+            font-size: 5px;     
+        } 
+        
+        .container{ 
+            
+            width: auto; 
+            margin-inline: auto;
+            margin-inline: 160px;  
+               
+          }
+
+        
+       
+      }
+       
+      @media only screen and (max-width:360px) {   
+        nav{ 
+          display: flex;
+          flex-wrap: wrap;
+          overflow-wrap: normal;  
+          
+        }
+        a{
+            font-size: 5px;     
+        } 
+        header{ 
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        
+
+       
+      }
+
+      /* ------------------------- Nav media query end --------------------------- */
+
+
+
+   
+
+
+      .container{
+        /* border: 2px solid black; */
+        margin: 120px 400px 0px 400px;
+        height: 70vw;  
+        display: flex;
+        justify-content: center;
+        margin: 120px 400px 0px 400px;
+        width: auto; 
+        margin-inline: 160px; 
+      }
+
+   
+      .box-1{
+        /* border: 1px solid black;       */
+        width: 586px;                
+        height: 70vw;      
+      }
+       
+      .box-2{
+        /* border: 1px solid black;       */
+        width: 750px;      
+        height: 70vw;
+        margin-inline: 10px;     
+      }
+      
+      .box-3{
+        /* border: 1px solid black;       */
+        width: 600px;    
+        height: 70vw;      
+      }
+
+      h3{ 
+        font-size: 24px;     
+        list-style-type: none;   
+      }
+
+      .p1{
+        font-size: 13.5px;   
+        font-weight: 600;    
+        color: rgba(0, 0, 0, 0.822); 
+      }
+
+      .p2{
+        padding-top: 12px; 
+        font-size: 11.5px;         
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.411);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+      }
+
+      .p3{
+        padding-top: 12px;
+        padding-bottom: 10px;  
+        font-size: 13px;        
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.686);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+      }
+
+      .p4{
+        list-style-type: disc;  
+        color: rgba(0, 0, 0, 0.686);
+        font-size: 12px;   
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;         
+      }
+      .p4::marker{
+        color: red;
+        font-size: 20px; 
+      }
+      .p5{
+        list-style-type: disc;    
+        color: rgba(0, 0, 0, 0.686);
+        font-size: 12px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;        
+      }
+
+      .p5::marker{
+        color: red;
+        font-size: 20px; 
+      }
+
+      .p6{ 
+        list-style-type: disc;       
+        color: rgba(0, 0, 0, 0.686);  
+        font-size: 12px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+      }
+
+      .p7{
+        font-size: 14px;  
+      }
+      
+
+      .p6::marker{ 
+        color: red;
+        font-size: 19px; 
+      }
+      .i1{
+        width: 400px; 
+      }
+
+      .im-con{
+        display: flex;
+      }
+
+      .im{
+        padding-top: 8px; 
+        width: 110px;
+        height: 110px;      
+      }
+
+      .ri{
+        padding-top: 10px;  
+        padding-left: 8px; 
+        text-align: justify;
+      }
+
+      span{      
+        font-size: 11.5px;           
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.411);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      }
+
+      .line{
+        padding-bottom: 15px;  
+        border-bottom: 1px solid rgba(0, 0, 0, 0.342);
+      }      
+
+      h6{
+        padding-top: 15px; 
+        font-size: 16px;    
+      }
+
+
+      #bg-ads{
+        width: 550px;   
+        height: 270px;   
+      }
+
+      .im-con2{
+        display: flex;
+      } 
+
+      .left{
+        /* border: 1px solid black; */
+        padding-top: 20px;
+        width: 270px;   
+        height: 55vw;    
+      }  
+      .right{
+        /* border: 1px solid black; */
+        padding-top: 20px;
+        width: 295px;     
+        height: 55vw;    
+      } 
+
+      .bt{
+        font-size: 11px;  
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        font-weight: 500;
+        color: #c1272d;
+        cursor: pointer;    
+      }
+
+      h2:after {
+        content: ' \27A4'; 
+        font-size: 11px;    
+      }
+
+      .ht-1{
+        width: 250px; 
+        padding-top: 15px;  
+      }
+
+      h4{
+        text-align: center;
+      }
+     
+      .content{
+        display: flex;
+        padding-top: 34px; 
+        cursor: pointer;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.342);
+        padding-bottom: 10px;
+      }
+
+      .para{
+        color: rgba(0, 0, 0, 0.72);
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 500; 
+      }
+
+      #op{ 
+        width: 55px; 
+        height: 50px; 
+        padding-right:20px;      
+      }
+
+      .h5{
+        color: rgba(0, 0, 0, 0.479);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12px;    
+        text-align: center;
+      }
+
+      #ads{
+        width: 240px;
+        height: 200px;    
+        padding-top: 30px; 
+      } 
+     
+      .bt-2{
+        padding-top: 20px;  
+      }
+
+      #pe{
+        padding-top: 15px; 
+      }
+
+      .e1{
+        list-style-type: disc;
+        font-size: 25px; 
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.782);
+      }
+      .e1::marker{
+        color: red;
+        font-size: 14px;
+      }
+
+      .e{
+        list-style-type: disc;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif; 
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.782);
+      }
+      .e::marker{
+        color: red;
+        font-size: 14px;
+      }
+      
+
+
+     
+
+
+    </style>
+  </head>
+  <body>
+    <!-- <header>
+      <li class="head">EPAPER</li>
+      <li class="head">LIVE TV</li>
+      <li class="head">DAWNNEWS URDU</li>
+      <li class="head">IMAGES</li>
+      <li class="head">HERALD</li>
+      <li class="head">AURORA</li>
+      <li class="head">CITYFM89</li>
+      <li class="head">TEELI</li>
+      <li class="head">ADVERTISE</li>
+      <li class="head">EVENTS/SUPPLEMENTS</li>
+      <li class="head">CLASSIFIEDS</li>
+      <li class="head">OBITUARIES</li>
+    </header> -->
+
+    <p class="logo">SOCCERRIFIC</p>
+    <p class="tag">TODAY'S PAPER | JANUARY 25, 2024</p>
+
+    <nav>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">NEWS</a></li>
+      <li><a id="red" href="#">MATCHES</a></li>
+      <li><a id="red" href="#">TEAMS</a></li>
+      <li><a href="#">FC UNITED </a></li>
+      <li><a href="#">BLOG</a></li>
+      <li><a href="#">BOOK TICKETS</a></li>
+      <li><a href="#">CONTACT</a></li>
+     
+    </nav>
+
+
+
+    <div class="container">
+      <div class="box-1"><h3>Guardiola, Mourinho and the game that changed everything</h3>
+          <img class="i1" src="data:image/jpeg;base64,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" alt="">
+          <p class="p1">
+            Pep Guardiola was a coaching novice. What did Barcelona see to convince them to turn down Jose Mourinho and give him one of the biggest jobs in the game
+            </p>
+          <p class="p2">
+            
+            European Football
+            Posted
+            15 hours ago            </p>
+          <p class="p3">RELATED</p>
+          <li class="p4">Unmatched, global, round-the-clock news</li>
+          <li class="p5">Hand-picked insights that are easy to find and use</li>
+          <li class="p6">Our Daily Briefing newsletter, delivering the day's headlines right to your inbox</li>
+          <div class="line"></div>
+          <img id="live" src="live.PNG" alt="live news" style="padding-top: 10px;">
+          <h6>Arsenal news and transfers LIVE - Karim Benzema enquiry, Kylian Mbappe announcement, Toney latest</h6>
+          <div class="im-con">
+            <div class="le"><img class="im" src="https://i2-prod.football.london/incoming/article28504732.ece/ALTERNATES/s1200/0_GettyImages-1850319206.jpg" alt="flag"></div>
+            <div class="ri"><div class="p7">Arsenal transfer news with the latest headlines and stories coming out of the Emirates stadium as it happens with updates on Thomas Partey, Martin Zubimendi and Ivan Toney <br><br><span>Published about 5 hours ago</span></div></div>
+          </div>
+          <div class="line"></div>
+          <h6>Holders Senegal exit Cup of Nations with heads held high</h6>
+          <div class="im-con">
+            <div class="le"><img class="im" src="https://www.reuters.com/resizer/JzoPsF6gBTjgNgR1_ZTNnOokA_I=/960x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/FGWNYUF5YJKOTEY44NOFZTLPA4.jpg" alt="Iran"></div>
+            <div class="ri"><div class="p7">YAMOUSSOUKRO, Jan 30 (Reuters) - Holders Senegal were determined to depart the Africa Cup of Nations with dignity intact despite losing to hosts Ivory Coast in a match overshadowed by controversial refereeing decisions, coach Aliou Cisse said after their elimination on Monday. <br><br><span>Updated about 5 hours ago</span></div></div>
+          </div>
+          <div class="line"></div>
+          <h6>AUSTRALIA, TAJIKISTAN BOOK ASIAN CUP QUARTER-FINAL BERTHS</h6>
+          <div class="im-con">
+            <div class="le"><img class="im" src="https://www.reuters.com/resizer/h1gnnZSl-ZrrWddM_rNofleAdDU=/480x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/VWCWYWJQN5K65GPZZQYHYIV5YE.jpg" alt="PTM"></div>
+            <div class="ri"><div class="p7">Australia will face either South Korea or Saudi Arabia in the quarter-finals of the Asian Cup, while debutants Tajikistan will meet Jordan or Iraq after progressing beyond the last 16 in Qatar on Sunday.
+              Australia scored twice in the dying minutes through Craig Goodwin and Harry Souttar to register a 4-0 win over Indonesia after Elkan Baggott's own goal had put Graham Arnold's side ahead and Martin Boyle doubled the lead late in the first half.. <br><br><span>Updated about 3 hours ago</span></div></div>
+          </div>
+          <div class="line"></div>
+          <h6>PTI issues show-cause notice to Senator Saifullah Abro for withdrawing from NA-194 in Bilawal’s favour</h6>
+          <div class="im-con">
+            <div class="le"><img class="im" src="https://i.dawn.com/medium/2024/01/26193354c06cf7d.jpg?r=193528" alt="Bilawal"></div>
+            <div class="ri"><div class="p7">Directs Abro to submit response within three days "why action should not be taken" against him. <br><br><span>Updated about 7 hours ago</span></div></div>
+          </div>
+          <div class="line"></div>
+          
+          
+      </div>
+      <div class="box-2">
+        <img id="bg-ads" src="https://media.licdn.com/dms/image/C5622AQEwMVnKd-kQhA/feedshare-shrink_800/0/1613477394294?e=2147483647&v=beta&t=pJ_ksuAGRG-CWwRnWD_8nmsK5ogXyF4BEB_fIoIf_yM" alt="Ads">
+        <div class="im-con2">
+          <div class="left">
+            <h2 class="bt">MUST READ STORIES</h2>
+            <img class="ht-1" src="https://static.standard.co.uk/2024/01/29/18/28/SEI189241135.jpg?quality=75&auto=webp&width=640" alt="">
+            <h4>FT: Cape Verde 1-0 Mauritania</h4>
+            
+            <img class="ht-1" src="https://www.reuters.com/resizer/hEEfbPHFdN5f72bRXQsbgzwYnxM=/960x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/GJ2E27Q45BPTFHAPIO7JKX7DVM.jpg" alt="Governer house">
+            <h4>Liverpool to be without Salah for next two league games at least, says Klopp</h4>
+
+            <img class="ht-1" src="https://www.reuters.com/resizer/ZGx3uNlts0Ii5sIT6jhU5ye4JvA=/480x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/V5AJ2CEISBPPJI4D55YUDSB6UA.jpg" alt="ELECTIONS">
+            <h4>Ivorians put poor group stage behind them, eye AFCON glory</h4>
+
+            
+          </div>
+          <div class="right">
+            <div class="content">
+              <div class="para"><h5>Coach Segrt makes Tajikistan dream at Asian Cup</h5></div>
+              <div class="image"><img id="op" src="https://www.reuters.com/resizer/9ztcldMWe0F7bKjaKLzTPuMkASA=/480x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/4WBCDWO7ORIXVLB5M2CA2QP35I.jpg" alt="Flag"></div>
+            </div>
+
+            <div class="content">
+              <div class="para"><h5>Why elections are taking place in  2024 instead of last year</h5></div>
+              <div class="image"><img id="op" src="https://i.dawn.com/thumbnail/2024/01/16114259501e521.gif?r=114310" alt="last-year"></div>
+            </div>
+ 
+            <div class="content">
+              <div class="para"><h5>Maryam Nawaz — PML-N’s heir apparent</h5></div>
+              <div class="image"><img id="op" src="https://i.dawn.com/thumbnail/2024/01/26110550ab3c40e.jpg?r=113924" alt="Maryam-nawaz"></div>
+            </div>
+ 
+            <div class="content">
+              <div class="para"><h5>Can Bilawal recapture the magic his mother weaved?</h5></div> 
+              <div class="image"><img id="op" src="https://i.dawn.com/thumbnail/2024/01/260806532974d03.jpg?r=105704" alt="bilawal"></div>
+            </div>
+
+            <div class="content">
+              <div class="para"><h5>Three women from Rohri are making reusable pads for an affordable and sustainable menstrual hygiene solution</h5></div>
+              <div class="image"><img id="op" src="https://i.dawn.com/thumbnail/2024/01/271130121b1c2a4.jpg?r=113024" alt="woman"></div>
+            </div>
+ 
+            <div class="content">
+              <div class="para"><h5>Adapting to a Young Population social media is fastly growing</h5></div> 
+              <div class="image"><img id="op" src="https://i.dawn.com/thumbnail/2024/01/27111134bc32f06.jpg?r=111139" alt="young population"></div>
+            </div>
+            
+          </div>
+        </div>  
+      </div>
+        
+      <div class="box-3">
+      <div class="h5">Advertisement</div>
+      <img id="ads" src="https://media4.giphy.com/media/KzksgyThI470KC5VzE/giphy.gif?cid=6c09b952db5rkd10emeq8qu8jfsuoa0fqmrsmymoiz52spvb&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" alt="ads">
+      <div class="line"></div>
+
+      <h2 class="bt bt-2">LIVING ON THE POLITICAL EDGE</h2>
+
+      <img id="pe" src="https://i.dawn.com/thumbnail/2024/01/65ac41b62c60f.jpg?r=093434" alt="political edge">
+      <div class="line"></div> 
+
+      <li class="e1">Khaleeq Kiani</li>
+      <li class="e">Abdullah Momand</li>
+      <li class="e">Anwar Iqbal</li>
+      <li class="e">Our Correspondent</li>
+      <li class="e">Malik Asad</li>
+      </div>
+    </div>
+
+    
+   
+  </body>
+</html>
